@@ -6,6 +6,7 @@ var lunch = 12;
 var nap = 15;
 var party = 21;
 var messageText;
+var timeEventJS = document.getElementById("timeEvent");
 
 if (time == wakeup) {
 	messageText = "Time to wake up!";
@@ -30,3 +31,5 @@ if (time == wakeup) {
 	}
 
 console.log(messageText);
+
+timeEvent.innerText = messageText;
