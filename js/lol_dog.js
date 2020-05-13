@@ -82,7 +82,7 @@ var showCurrentTime = function () {
 	}
 
 	// put together the string that displays the time
-	var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
+	var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian;
 
 	clock.innerText = clockTime;
 
