@@ -28,7 +28,7 @@ else if (time == nap) {
 	messageText = "Let's take a nap.";
 }
 else if (time == party) {
-	image = "../img/dog-party.jpg";
+	image = "./img/dog-party.jpg";
 	messageText = "I'm going to par-taaay!";
 }
 else if (time < noon) {
