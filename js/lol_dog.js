@@ -122,4 +122,23 @@ var partyEvent = function () {
 
 };
 
-partyButton.addEventListener("click",partyEvent);
+partyButton.addEventListener("click", partyEvent);
+
+
+var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+var napTimeSelector = document.getElementById("napTimeSelector");
+
+var wakeUpEvent = function () {
+	wakeup = wakeUpTimeSelector.value;
+};
+var lunchTimeEvent = function () {
+	lunch = lunchTimeSelector.value;
+};
+var napTimeEvent = function () {
+	nap = napTimeSelector.value;
+};
+
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+lunchTimeSelector.addEventListener("change", lunchTimeEvent);
+napTimeSelector.addEventListener("change", napTimeEvent);
