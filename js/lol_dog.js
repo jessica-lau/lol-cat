@@ -92,6 +92,7 @@ var oneSecond = 1000;
 updateClock();
 setInterval(updateClock, oneSecond);
 
+//add variable to get element from HTML
 var partyButton = document.getElementById("partyTimeButton");
 
 // set isPartyTime to false
@@ -107,14 +108,16 @@ var partyEvent = function () {
 		// set time to partyTime so the lolCat clock 
 		//image and message update to the partyTime image and message
 		time = party;
-		partyButton.innerText("Party Over");
+		partyButton.innerText = "Party Over";
+		partyButton.style.backgroundColor = "#fe2e9a";
 
 	} else {
 		// if isPartyTime is true, change it to false to end the party
 		isPartyTime = false;
 		// set time back to the current time
 		time = new Date().getHours();
-		partyButton.innerText("Party Time!");
+		partyButton.innerText = "Party Time!";
+		partyButton.style.backgroundColor = "#ff0000";
 	}
 
 };
